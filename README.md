@@ -50,6 +50,10 @@ Test: "It will increment the currentId property and return the newly incremented
 Expect(game1.assignId()).toEqual(Game { Players: {}, CurrentId: 1, CurrentPlayer: 1});
 Expect(game1.assignId()).toEqual(return value = 1));
 
+Describe: Game.prototype.addPlayer(player)
+Test: "It will take a Player instance as an argument, call the assignID method, assign an id value to the Player instance, add the Player instance as a value of the Game's Player key.
+Expect(game1.addPlayer(player1)).toEqual(Game { Players: {1 { Name: "Michael", GameScore: 0, TurnScore: 0, id: 1} }, CurrentId: 1, CurrentPlayer: 1})
+
 
 
 ## Known Bugs
