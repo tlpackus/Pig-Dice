@@ -27,13 +27,20 @@ GameScore: gameScore
 TurnScore: turnScore
 Id: #
 
+Needed Buttons:
+Play
+Roll
+Hold
+New Game
+
 -What functions and how will these be triggered throughout the gameplay?
 
 Game functions:
+addId - triggered by addPlayer()
 addPlayer - triggered by submit (clicking the Play Button)
 roll - triggered by click (clicking Roll Button)
-hold - triggered by click (clicking Hold Button)
 tallyScore - triggered by either hold function execution or by roll === 1
+check100 - triggered by tallyScore (called with tallyScore)
 newGame - triggered by click (clicking New Game Button)
 switchPlayer - triggered by tallyScore() execution
 
@@ -47,3 +54,12 @@ it will be collected through a submit form to take player names then use clicks 
 When you have a broad overview of how you want to build your game, identify the simplest behavior, and perhaps what behaviors to tackle after that. Remember to start simple and work one step at a time.
 
 
+List of Tests:
+Player object
+Game object
+addPlayer()
+roll()
+100check()
+tallyScore()
+switchPlayer()
+newGame()
