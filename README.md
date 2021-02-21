@@ -28,7 +28,7 @@ _This is a detailed description of your application. Give as much detail as need
 
 _Alternatively,_
 
-* _Direct your browser to a [live version on GitHub Pages.] (tlpackuss.github.io/Pig-Dice/index.html)_
+* _Direct your browser to a [live version on GitHub Pages.] (tlpackus.github.io/Pig-Dice/index.html)_
 
 
 ## Tests
@@ -38,8 +38,8 @@ Test: "It does something"
 Expect (yourFunctionName("given input")).toEqual("expected output");
 
 Describe: Player()
-Test: "It will create Player instances with Name, GameScore, TurnScore and Id properties"
-Expect: (let player1 = new Player().toEqual(Player { Name: "", GameScore: 0, TurnScore: 0}));
+Test: "It will take a name argument and create Player instances with Name, GameScore, and TurnScore. The name argument will be the value of the name property."
+Expect: (let player1 = new Player("Michael").toEqual(Player { Name: "Michael", GameScore: 0, TurnScore: 0}));
 
 
 ## Known Bugs
