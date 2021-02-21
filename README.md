@@ -38,8 +38,13 @@ Test: "It does something"
 Expect (yourFunctionName("given input")).toEqual("expected output");
 
 Describe: Player()
-Test: "It will take a name argument and create Player instances with Name, GameScore, and TurnScore. The name argument will be the value of the name property."
+Test: "It will take a name argument and create Player instances with Name, GameScore, and TurnScore properties. The name argument will be the value of the Name property"
 Expect: (let player1 = new Player("Michael").toEqual(Player { Name: "Michael", GameScore: 0, TurnScore: 0}));
+
+Describe: Game()
+Test: "this will create Game instances with Players, CurrentId, and CurrentPlayer properties"
+Expect: (let game1 = new Game().toEqual(Game { Players: {}, CurrentId: 0, CurrentPlayer: 1}));
+
 
 
 ## Known Bugs
