@@ -63,6 +63,11 @@ Expect(game1.roll()).toEqual(4)
 Expect(game1.roll()).toEqual(5)
 Expect(game1.roll()).toEqual(6)
 
+Describe: Game.prototype.winnerCheck(player)
+Test: "Check if player gameScore is greater than or equal to 100"
+Expect(game1.winnerCheck(player1)).toEqual(return value = false)
+
+
 
 ## Known Bugs
 
