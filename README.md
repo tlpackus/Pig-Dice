@@ -54,6 +54,14 @@ Describe: Game.prototype.addPlayer(player)
 Test: "It will take a Player instance as an argument, call the assignID method, assign an id value to the Player instance, add the Player instance as a value of the Game's Player key.
 Expect(game1.addPlayer(player1)).toEqual(Game { Players: {1 { Name: "Michael", GameScore: 0, TurnScore: 0, id: 1} }, CurrentId: 1, CurrentPlayer: 1})
 
+Describe: Game.prototype.roll
+Test: "It will generate a random number between 1-6"
+Expect(game1.roll()).toEqual(1)
+Expect(game1.roll()).toEqual(2)
+Expect(game1.roll()).toEqual(3)
+Expect(game1.roll()).toEqual(4)
+Expect(game1.roll()).toEqual(5)
+Expect(game1.roll()).toEqual(6)
 
 
 ## Known Bugs
@@ -67,3 +75,4 @@ Copyright (c) **_2021 Jessica R. Williams_**
 ## Contact Information
 **_Theron L. Packus [mailto](mailto:tlpackus@gmail.com)_**
 **_Jessica R. Williams [mailto](mailto:jessicarubinwilliams@gmail.com)_**
+**_Carlos Urquiza [mailto](mailto:webquiza@gmail.com)_**
