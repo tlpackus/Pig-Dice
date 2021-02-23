@@ -18,6 +18,14 @@ Game.prototype.roll = function () {
   return Math.floor((Math.random() * 6) + 1);
 }
 
+Game.prototype.winnerCheck = function (player) {
+  if (player.gameScore >= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function Player(name) {
   this.name = name;
   this.turnScore = 0;
