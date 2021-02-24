@@ -62,7 +62,7 @@ List of Tests:
 √ addPlayer()
 √ roll()
 √ winnerCheck()
-tallyTurnScore()
+V tallyTurnScore()
 tallyGameScore()
 switchPlayer()
 takeTurn()
