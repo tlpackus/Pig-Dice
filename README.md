@@ -71,8 +71,9 @@ Describe: Game.prototype.tallyTurnScore(player)
 Test: "It will take a Player instance as an argument, call Game.prototype.roll(), assess the value of .roll() and if that value is >1 assign the value of .roll to the player's turnScore property. If the value of the roll is 1 it will set the player's turnScore property to zero"
 Expect(game1.tallyTurnScore(player1)).toEqual(Game { Players: {1 { Name: "player1", GameScore: 0, TurnScore: 5, id: 1} }, CurrentId: 1, CurrentPlayer: 1})
 
-<!-- Describe: Game.prototype.tallyGameScore(player)
-Test: "It will take a Player instance as an argument -->
+Describe: Game.prototype.tallyGameScore(player)
+Test: "It will take a Player instance as an argument. It will add that player's turnScore property to its gameScore property and reset turnScore to zero"
+Expect(game1.tallyGameScore(player1)).toEqual(Game { Players: {1 { Name: "player1", GameScore: 5, TurnScore: 0, id: 1} }, CurrentId: 1, CurrentPlayer: 1})
 
 
 ## Known Bugs
