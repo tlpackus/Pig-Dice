@@ -61,7 +61,7 @@ List of Tests:
 √ assignId()
 √ addPlayer()
 √ roll()
-winnerCheck()
+√ winnerCheck()
 tallyTurnScore()
 tallyGameScore()
 switchPlayer()
