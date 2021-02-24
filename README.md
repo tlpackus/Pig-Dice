@@ -67,6 +67,9 @@ Describe: Game.prototype.winnerCheck(player)
 Test: "Check if player gameScore is greater than or equal to 100"
 Expect(game1.winnerCheck(player1)).toEqual(return value = false)
 
+Describe: Game.prototype.tallyTurnScore(player) 
+Test: "It will take a Player instance and roll value as arguments. Take the players roll value and add it to turnScore"
+Expect(game1.tallyTurnScore(player1, 5)).toEqual(Game { Players: {1 { Name: "player1", GameScore: 0, TurnScore: 5, id: 1} }, CurrentId: 1, CurrentPlayer: 1})
 
 
 ## Known Bugs
