@@ -35,9 +35,18 @@ Game.prototype.tallyTurnScore = function(player) {
     player.turnScore = 0;
   }
 }
+
 Game.prototype.tallyGameScore = function(player) {
   player.gameScore += player.turnScore;
   player.turnScore = 0;
+}
+
+Game.prototype.switchCurrentPlayer = function() {
+  if (this.currentPlayer === 1) {
+    this.currentPlayer = 2;
+  } else {
+    this.currentPlayer = 1;
+  }
 }
 
 function Player(name) {
