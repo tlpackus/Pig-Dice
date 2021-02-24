@@ -26,6 +26,15 @@ Game.prototype.winnerCheck = function (player) {
   }
 }
 
+Game.prototype.tallyTurnScore = function (player) {
+  let rollValue = this.roll()
+  if (rollValue > 1) {
+    player.turnScore += rollValue;
+  } else {
+    player.turnScore = 0;
+  }
+}
+
 function Player(name) {
   this.name = name;
   this.turnScore = 0;
